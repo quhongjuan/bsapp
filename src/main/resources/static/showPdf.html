@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示pdf</title>
+
+</head>
+<body>
+<button type="button" onclick="show()">点击查看试卷</button>
+</body>
+<script>
+   function show() {
+       var param=1;
+       window.open("/js/web/viewer.html?file="+encodeURIComponent("/pdf?id="+param));
+   }
+</script>
+</html>
